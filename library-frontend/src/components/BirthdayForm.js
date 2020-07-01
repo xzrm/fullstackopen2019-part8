@@ -4,7 +4,6 @@ import { useMutation } from '@apollo/client'
 import { ALL_AUTHORS, EDIT_BIRTHDAY } from '../queries'
 
 const BirthdayForm = ({ authors }) => {
-  // const [author, setAuthor] = useState('')
   const [author, setAuthor] = useState(authors[0].name)
   const [born, setBorn] = useState('')
 
@@ -14,7 +13,6 @@ const BirthdayForm = ({ authors }) => {
 
   const submit = (event) => {
     event.preventDefault()
-    console.log(author)
     changeBirthday({ variables: { name: author, setBornTo: parseInt(born) } })
     setBorn('')
   }
