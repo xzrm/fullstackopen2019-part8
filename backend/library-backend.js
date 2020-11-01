@@ -12,7 +12,7 @@ const User = require('./models/user')
 
 const MONGODB_URI = process.env.MONGODB_URI
 const JWT_SECRET = process.env.SECRET
-// const MONGODB_URI = 'mongodb+srv://new-user_04:@Haslo1234@cluster0-nqxxg.mongodb.net/library-app?retryWrites=true&w=majority'
+
 
 mongoose.set('useFindAndModify', false)
 
